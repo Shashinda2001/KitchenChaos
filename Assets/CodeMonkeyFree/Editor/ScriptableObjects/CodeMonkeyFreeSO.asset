@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d777d270cee3a5c419cb21a828556f1a, type: 3}
+  m_Name: CodeMonkeyFreeSO
+  m_EditorClassIdentifier: 
+  currentVersion: 1.01
+  subtype: kitchenchaos
+  lastShownTimestamp: 1772354527
+  lastUpdateResponse:
+    version: 1.01
+    versionUrl: https://unitycodemonkey.com
+  checkedLastUpdateTimestamp: 1772354527
+  lastQOTDResponse:
+    questionId: 277
+    questionText: 'What is the value stored in percentage?
+
+      <p>int health =
+      25;</p>
+
+      <p>int healthMax = 100;</p>
+
+      <p>float percentage = health
+      / healthMax;</p>'
+    answerA: 0.25f
+    answerB: 0
+    answerC: 2.5f
+    answerD: 
+    answerE: 
+  lastQotdTimestamp: 1772354527
+  lastDynamicHeaderResponse:
+    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/gameDevReport_2.png
+    topText: Stay up to date with the latest in Game Dev straight to your inbox!
+    topLink: gamedevreport
+    bottomText: My 10+ Years of C# Knowledge in 1 Course!
+    bottomLink: csharpcourse
+  lastDynamicHeaderTimestamp: 1772354527
+  websiteLatestMessage:
+    text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
+      Click here!</a>
+  websiteLatestMessageTimestamp: 1772354527
+  websiteLatestVideos:
+    videos:
+    - youTubeId: RXf1jsXxWkg
+      title: Learn how to write PRO level code with this DEEP DIVE!
+    - youTubeId: Lm_YTrn9KYc
+      title: Unity HDRP is DEAD!
+    - youTubeId: Ah2WF-_rZig
+      title: Unity EXPLAINED in 200 SECONDS!
+    - youTubeId: FdyHnVIoQko
+      title: TOP 10 NEW Systems and Tools FEBRUARY 2026! | Unity Asset Store
+  websiteLatestVideosTimestamp: 1772354527
