@@ -18,7 +18,7 @@ MonoBehaviour:
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1772449613
+  checkedLastUpdateTimestamp: 1772453401
   lastQOTDResponse:
     questionId: 277
     questionText: 'What is the value stored in percentage?
@@ -35,18 +35,18 @@ MonoBehaviour:
     answerC: 2.5f
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1772449613
+  lastQotdTimestamp: 1772453401
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/gameDevReport_2.png
     topText: Stay up to date with the latest in Game Dev straight to your inbox!
     topLink: gamedevreport
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1772449613
+  lastDynamicHeaderTimestamp: 1772453401
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1772449613
+  websiteLatestMessageTimestamp: 1772453401
   websiteLatestVideos:
     videos:
     - youTubeId: XShVX_PBi1o
@@ -57,4 +57,4 @@ MonoBehaviour:
       title: Unity HDRP is DEAD!
     - youTubeId: Ah2WF-_rZig
       title: Unity EXPLAINED in 200 SECONDS!
-  websiteLatestVideosTimestamp: 1772449613
+  websiteLatestVideosTimestamp: 1772453401

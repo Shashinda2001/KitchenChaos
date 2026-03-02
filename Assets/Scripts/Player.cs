@@ -14,7 +14,19 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-       
+        HandleMovement();
+        HandleInteractions();
+
+
+    }
+
+    private void HandleInteractions()
+    {
+         
+    }
+
+    private void HandleMovement()
+    {
         Vector2 inputVector = gameInput.GetMovementVectorNormalized();
         // Convert the 2D input vector to a 3D movement direction (assuming movement on the XZ plane)
         Vector3 moveDir = new Vector3(inputVector.x, 0, inputVector.y);
@@ -25,6 +37,7 @@ public class Player : MonoBehaviour
         float playerHeight = 2f;
         bool canMove = !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDir, moveDistance);
 
+        // If there's an obstacle in the movement direction, try to move only along the X or Z axis
         if (!canMove)
         {
             //can't move towards moveDir, try only X movement
@@ -47,12 +60,12 @@ public class Player : MonoBehaviour
             }
 
         }
-       
+
 
         if (canMove)
-        transform.position += moveDir * Time.deltaTime * moveSpeed;
+            transform.position += moveDir * Time.deltaTime * moveSpeed;
 
-        isWalking =moveDir != Vector3.zero;
+        isWalking = moveDir != Vector3.zero;
         // Smoothly rotate the player to face the movement direction
         float rotateSpeed = 10f;
         transform.forward = Vector3.Slerp(transform.forward, moveDir, Time.deltaTime * rotateSpeed);
