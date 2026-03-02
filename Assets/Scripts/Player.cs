@@ -36,9 +36,13 @@ public class Player : MonoBehaviour
         float interactDistance = 2f;
         if(Physics.Raycast(transform.position, lastInteractDir, out RaycastHit raycastHit, interactDistance))
         {
-            Debug.Log("We hit something " + raycastHit.collider.name + " " + raycastHit.point);
+            if (raycastHit.transform.TryGetComponent(out CleanCounter cleanCounter))
+            {
+                // We hit a clean counter, interact with it
+                cleanCounter.Interact();
+            }
         }
-        else {             Debug.Log("We didn't hit anything " + lastInteractDir); }
+        
 
     }
 
