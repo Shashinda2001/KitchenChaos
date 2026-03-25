@@ -14,12 +14,38 @@ public class Player : MonoBehaviour
 
     private bool isWalking;
 
+    private void Start()
+    {
+        gameInput.OnInteractAction += GameInput_OnInteractAction;
+    }
+
+    private void GameInput_OnInteractAction(object sender, EventArgs e)
+    {
+        Vector2 inputVector = gameInput.GetMovementVectorNormalized();
+        Vector3 moveDir = new Vector3(inputVector.x, 0, inputVector.y);
+
+        // Only update the last interaction direction if the player is moving
+        if (moveDir != Vector3.zero)
+        {
+            lastInteractDir = moveDir;
+        }
+
+        float interactDistance = 2f;
+        if (Physics.Raycast(transform.position, lastInteractDir, out RaycastHit raycastHit, interactDistance, countersLayerMask))
+        {
+            if (raycastHit.transform.TryGetComponent(out CleanCounter cleanCounter))
+            {
+                // We hit a clean counter, interact with it
+                cleanCounter.Interact();
+            }
+        }
+    }
+
     // Update is called once per frame
     private void Update()
     {
         HandleMovement();
         HandleInteractions();
-
 
     }
 
@@ -40,7 +66,7 @@ public class Player : MonoBehaviour
             if (raycastHit.transform.TryGetComponent(out CleanCounter cleanCounter))
             {
                 // We hit a clean counter, interact with it
-                cleanCounter.Interact();
+               // cleanCounter.Interact();
             }
         }
         
